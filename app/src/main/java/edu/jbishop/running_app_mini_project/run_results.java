@@ -3,6 +3,7 @@ package edu.jbishop.running_app_mini_project;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -17,6 +18,12 @@ public class run_results extends AppCompatActivity {
     public static final String TIME = "TIME";
     public static final String METERS = "METERS";
     public static final String CALORIES = "CALORIES";
+
+
+
+
+    
+
     int step, time;
     double meters, calories;
     private static DecimalFormat df2 = new DecimalFormat("#.##");
@@ -28,6 +35,7 @@ public class run_results extends AppCompatActivity {
 
 
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
